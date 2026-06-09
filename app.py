@@ -50,7 +50,7 @@ if page == "🏠 Home":
     st.title("⚡Peak Load  Prediction System")
 
     st.success("AI Powered Smart Electricity Demand Forecasting Dashboard")
-    st.image(os.path.join(DATA_DIR, "home.jpg"), use_container_width=True)
+    st.image(os.path.join(DATA_DIR, "home.jpg"), width=700)
    
     col1, col2, col3, col4 = st.columns(4)
 
@@ -82,7 +82,7 @@ elif page == "📂 Dataset":
 
     st.title("📂 Dataset Information")
 
-    st.image(os.path.join(DATA_DIR, "dataset.jpg"), use_container_width=True)
+    st.image(os.path.join(DATA_DIR, "dataset.jpg"), width=700)
     df = pd.read_csv(os.path.join(DATA_DIR, "household_power_consumption.csv"))
     st.subheader("Dataset Preview")
 
@@ -105,7 +105,7 @@ elif page == "📊 Visualization":
 
     st.title("📊 Data Visualization Dashboard")
 
-    st.image(os.path.join(DATA_DIR, "visualization.jpg"), use_container_width=True)
+    st.image(os.path.join(DATA_DIR, "visualization.jpg"), width=700)
     df = pd.read_csv(os.path.join(DATA_DIR, "household_power_consumption.csv"))
     df.columns = df.columns.str.strip()
 
@@ -183,7 +183,7 @@ elif page == "🤖 Model":
 
     st.title("🤖 Machine Learning Model")
 
-    st.image(os.path.join(DATA_DIR, "model.jpg"),      use_container_width=True)
+    st.image(os.path.join(DATA_DIR, "model.jpg"), width=700)
     st.subheader("Algorithm Used")
 
     st.success("Random Forest Regressor")
@@ -216,7 +216,7 @@ month
 elif page == "🔮 Result":
 
     st.title("🔮 Peak Load Prediction") 
-    st.image(os.path.join(DATA_DIR, "result.jpg"), use_container_width=True)
+    st.image(os.path.join(DATA_DIR, "result.jpg"), width=700)
    
     hour = st.slider("Hour", 0, 23)
     day = st.slider("Day", 1, 31)
@@ -270,7 +270,7 @@ elif page == "ℹ️ About":
 
     st.title("ℹ️ About Project")
 
-    st.image(os.path.join(DATA_DIR, "about.jpg"), use_container_width=True)
+    st.image(os.path.join(DATA_DIR, "about.jpg"), width=700)
     st.subheader("Project Objective")
 
     st.write("""
